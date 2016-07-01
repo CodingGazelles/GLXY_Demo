@@ -1,0 +1,8 @@
+#carthage build --platform iOS
+#carthage update --platform iOS
+
+#Cartfile
+github "antitypical/Result" >= 2.1.1
+github "emaloney/CleanroomLogger"
+github "ReSwift/ReSwift" >= 2.0
+github "Thomvis/BrightFutures" >= 4.1.0
