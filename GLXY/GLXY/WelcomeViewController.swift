@@ -29,9 +29,11 @@ class WelcomeViewController: UIViewController {
     }
 
     @IBAction func signInButtonClicked(sender: AnyObject) {
+        AppLogger.debug("signInButtonClicked")
     }
 
     @IBAction func createAccountButtonClicked(sender: AnyObject) {
+        AppLogger.debug("createAccountButtonClicked")
     }
 }
 

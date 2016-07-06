@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF9093C81D2C288A0079B608 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */; };
+		DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */; };
 		DF90D4271D258BD6009EF0C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4261D258BD6009EF0C2 /* LoginViewController.swift */; };
 		DF90D42A1D25933E009EF0C2 /* UIStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4291D25933E009EF0C2 /* UIStateManager.swift */; };
 		DF90D43D1D25A5F5009EF0C2 /* Box.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DF90D4311D25A5F5009EF0C2 /* Box.framework.dSYM */; };
@@ -85,6 +87,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersNearbyViewController.swift; sourceTree = "<group>"; };
 		DF90D4261D258BD6009EF0C2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DF90D4291D25933E009EF0C2 /* UIStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStateManager.swift; sourceTree = "<group>"; };
 		DF90D42C1D2593A5009EF0C2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				DFA3F5A21D246CAC00490A95 /* WelcomeViewController.swift */,
 				DF90D4261D258BD6009EF0C2 /* LoginViewController.swift */,
 				DF90D4571D25B7C4009EF0C2 /* CreateAccountViewController.swift */,
+				DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */,
+				DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -449,6 +455,8 @@
 				DF90D44C1D25A701009EF0C2 /* UIState.swift in Sources */,
 				DF90D44E1D25A831009EF0C2 /* AppLogger.swift in Sources */,
 				DFA3F5A31D246CAC00490A95 /* WelcomeViewController.swift in Sources */,
+				DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */,
+				DF9093C81D2C288A0079B608 /* UserSearchViewController.swift in Sources */,
 				DF90D42A1D25933E009EF0C2 /* UIStateManager.swift in Sources */,
 				DF90D4521D25AD33009EF0C2 /* AppReducer.swift in Sources */,
 				DF90D4541D25AE79009EF0C2 /* UIAction.swift in Sources */,
