@@ -48,6 +48,8 @@
 		DFA3F5AB1D246CAC00490A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA3F5A91D246CAC00490A95 /* LaunchScreen.storyboard */; };
 		DFA3F5B61D246CAC00490A95 /* GLXYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3F5B51D246CAC00490A95 /* GLXYTests.swift */; };
 		DFA3F5C11D246CAC00490A95 /* GLXYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3F5C01D246CAC00490A95 /* GLXYUITests.swift */; };
+		DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905F91D2EAC570038B5E7 /* AppTextField.swift */; };
+		DFE905FD1D2EFCB00038B5E7 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905FC1D2EFCB00038B5E7 /* RegisterAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		DFA3F5BC1D246CAC00490A95 /* GLXYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLXYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA3F5C01D246CAC00490A95 /* GLXYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLXYUITests.swift; sourceTree = "<group>"; };
 		DFA3F5C21D246CAC00490A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFE905F91D2EAC570038B5E7 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		DFE905FC1D2EFCB00038B5E7 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 				DF90D4571D25B7C4009EF0C2 /* CreateAccountViewController.swift */,
 				DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */,
 				DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */,
+				DFE905FC1D2EFCB00038B5E7 /* RegisterAccountViewController.swift */,
+				DFE905FB1D2EFC2C0038B5E7 /* UIControls */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -308,6 +314,14 @@
 				DFA3F5C21D246CAC00490A95 /* Info.plist */,
 			);
 			path = GLXYUITests;
+			sourceTree = "<group>";
+		};
+		DFE905FB1D2EFC2C0038B5E7 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				DFE905F91D2EAC570038B5E7 /* AppTextField.swift */,
+			);
+			name = UIControls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,6 +469,8 @@
 				DF90D44C1D25A701009EF0C2 /* UIState.swift in Sources */,
 				DF90D44E1D25A831009EF0C2 /* AppLogger.swift in Sources */,
 				DFA3F5A31D246CAC00490A95 /* WelcomeViewController.swift in Sources */,
+				DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */,
+				DFE905FD1D2EFCB00038B5E7 /* RegisterAccountViewController.swift in Sources */,
 				DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */,
 				DF9093C81D2C288A0079B608 /* UserSearchViewController.swift in Sources */,
 				DF90D42A1D25933E009EF0C2 /* UIStateManager.swift in Sources */,

@@ -21,6 +21,9 @@ class LoginViewController: UIViewController {
         
         AppLogger.debug("LoginViewController did load")
         
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

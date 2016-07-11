@@ -21,6 +21,9 @@ class WelcomeViewController: UIViewController {
         
         AppLogger.debug("WelcomeViewController did load")
         
+        navigationController!.navigationBarHidden = true
+        navigationController!.toolbarHidden = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +37,10 @@ class WelcomeViewController: UIViewController {
 
     @IBAction func createAccountButtonClicked(sender: AnyObject) {
         AppLogger.debug("createAccountButtonClicked")
+    }
+    
+    @IBAction func backButtonClicked(sender: UIStoryboardSegue){
+        AppLogger.debug("backButtonClicked")
     }
 }
 
