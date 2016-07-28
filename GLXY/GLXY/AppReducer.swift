@@ -9,6 +9,7 @@
 import Foundation
 
 import ReSwift
+import UIKit
 
 
 
@@ -24,13 +25,13 @@ import ReSwift
 
 struct AppReducer: Reducer {
     
-    func handleAction( action: Action, state: UIState?) -> UIState {
+    func handleAction( action: Action, state: AppState?) -> AppState {
         
-        let state = state ?? UIState()
+        var state = state ?? AppState()
         
         
         
-        guard action is UIAction else {
+        guard action is AppAction else {
             
             AppLogger.error( "Reducer received an unidentified action. Unable to treat it. \(action)", error: nil)
             
@@ -39,11 +40,11 @@ struct AppReducer: Reducer {
         
         
         
-//        let uiAction = action as! UIAction
+//        let action = action as! AppAction
         
-//        switch uiAction {
-//            
-//        
+        switch action {
+            
+        
 //        // MARK: StateActions
 //        case _ as Action1:
 //            AppLogger.debug("Nothing")
@@ -54,18 +55,19 @@ struct AppReducer: Reducer {
 //            AppLogger.debug("Nothing")
 //
 //            
-//            
-//            
-//
-//            
-//
-//        // MARK: Unknown actions
-//        default:
-//            
-//            AppLogger.error( "Reducer received an unidentified action. Unable to treat it. \(action)", error: nil)
-//            
-//        }
-        
+            
+            
+        case _ as AppInitAction:
+            
+            state = initialState()
+            
+
+        // MARK: Unknown actions
+        default:
+            AppLogger.error( "Reducer received an unidentified action. Unable to treat it. \(action)", error: nil)
+            
+        }
+    
         return state
     }
     

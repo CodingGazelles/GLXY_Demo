@@ -14,7 +14,8 @@ import UIKit
 class RegisterAccountViewController: UIViewController {
     
 
-    let state = UIStateManager.defaultState()
+    let store = AppStateStore.defaultStore()
+    var state: AppState!
     
     override func viewDidLoad() {
         super.viewDidLoad()

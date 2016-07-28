@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     // The object that will manage the state of the UI
-    lazy var uiState = UIStateManager.defaultState()
+    lazy var store = AppStateStore.defaultStore()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -59,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func initApp() {
                     
         // Init AppState
-        self.uiState.initState()
+        store.initState()
         
     }
 

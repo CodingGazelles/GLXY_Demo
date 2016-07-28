@@ -12,22 +12,7 @@ import ReSwift
 
 
 
-// MARK: - StateType protocol
-
-/*
- 
- Implementation of the Unidirectional Data Flow design pattern
- 
- Protocol used to mark the structures used to represent the UI State
- 
- See https://github.com/ReSwift/ReSwift for more explication
- 
- */
-
-protocol StateType : ReSwift.StateType, Loggable {}
-
-
-// MARK: - State UI
+// MARK: - App State
 
 /*
  
@@ -40,8 +25,15 @@ protocol StateType : ReSwift.StateType, Loggable {}
  
  */
 
-struct UIState: StateType {
+struct AppState: StateType, Loggable  {
     
+    var winksOverviewState = WinksOverviewState()
     
+}
+
+
+struct WinksOverviewState {
+    
+    var winks = [Wink]()
     
 }

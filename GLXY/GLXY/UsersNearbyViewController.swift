@@ -12,4 +12,7 @@ import UIKit
 
 class UsersNearbyViewController: UIViewController {
     
+    let store = AppStateStore.defaultStore()
+    var state: AppState!
+    
 }

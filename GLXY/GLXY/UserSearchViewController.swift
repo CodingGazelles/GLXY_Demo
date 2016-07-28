@@ -12,4 +12,7 @@ import UIKit
 
 class UserSearchViewController: UIViewController {
     
+    let store = AppStateStore.defaultStore()
+    var state: AppState!
+    
 }

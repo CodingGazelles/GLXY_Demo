@@ -14,7 +14,8 @@ import ReSwift
 
 class WelcomeViewController: UIViewController {
     
-    let state = UIStateManager.defaultState()
+    let store = AppStateStore.defaultStore()
+    var state: AppState!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,16 +61,16 @@ extension WelcomeViewController: StoreSubscriber {
     override func viewWillAppear( animated: Bool) {
         super.viewWillAppear( animated)
         
-        state.store.subscribe(self)
+        store.subscribe(self)
     }
     
     override func viewWillDisappear( animated: Bool) {
         super.viewWillDisappear( animated)
         
-        state.store.unsubscribe(self)
+        store.unsubscribe(self)
     }
     
-    func newState(state: UIState) {
+    func newState(state: AppState) {
         AppLogger.debug("New State received by WelcomeViewController: \(state)")
         
         // UPdate UI
