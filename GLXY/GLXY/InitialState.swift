@@ -87,12 +87,12 @@ func winks() -> [Wink] {
     
     
     winker2.profilePhoto = UIImage.init(named: "p2")
-    winker2.name = "Tom2"
+    winker2.name = "Thania"
     winker2.country = "FR"
     winker2.state = ""
     winker2.city = "Paris"
     winker2.birthday = calendar?.dateFromComponents(winker1BirthdayComponents)
-    winker2.sex = Sex(value: SexCode.Male.rawValue)
+    winker2.sex = Sex(value: SexCode.Female.rawValue)
     winker2.maritalStatus = MaritalStatus(value: MaritalStatusCode.Single.rawValue)
     
     wink2.winker = winker2
@@ -130,12 +130,12 @@ func winks() -> [Wink] {
     
     
     winker3.profilePhoto = UIImage.init(named: "p3")
-    winker3.name = "Samy3"
+    winker3.name = "Samira"
     winker3.country = "BRL"
     winker3.state = "SP"
     winker3.city = "São Paulo"
     winker3.birthday = calendar?.dateFromComponents(winker1BirthdayComponents)
-    winker3.sex = Sex(value: SexCode.Male.rawValue)
+    winker3.sex = Sex(value: SexCode.Female.rawValue)
     winker3.maritalStatus = MaritalStatus(value: MaritalStatusCode.Separated.rawValue)
     
     wink3.winker = winker3
@@ -171,13 +171,13 @@ func winks() -> [Wink] {
     winker4BirthdayComponents.day = 12
     
     
-    winker4.profilePhoto = UIImage.init(named: "p3")
-    winker4.name = "Tomy"
+    winker4.profilePhoto = UIImage.init(named: "p4")
+    winker4.name = "Elisa"
     winker4.country = "BRL"
     winker4.state = "SP"
     winker4.city = "São Paulo"
     winker4.birthday = calendar?.dateFromComponents(winker1BirthdayComponents)
-    winker4.sex = Sex(value: SexCode.Male.rawValue)
+    winker4.sex = Sex(value: SexCode.Female.rawValue)
     winker4.maritalStatus = MaritalStatus(value: MaritalStatusCode.Separated.rawValue)
     
     wink4.winker = winker4
@@ -214,7 +214,7 @@ func winks() -> [Wink] {
     winker5BirthdayComponents.day = 12
     
     
-    winker5.profilePhoto = UIImage.init(named: "p3")
+    winker5.profilePhoto = UIImage.init(named: "p5")
     winker5.name = "Kal"
     winker5.country = "GB"
     winker5.state = ""
@@ -257,7 +257,7 @@ func winks() -> [Wink] {
     winker6BirthdayComponents.day = 14
     
     
-    winker6.profilePhoto = UIImage.init(named: "p3")
+    winker6.profilePhoto = UIImage.init(named: "p6")
     winker6.name = "Dominik"
     winker6.country = "GB"
     winker6.state = ""
@@ -300,13 +300,13 @@ func winks() -> [Wink] {
     winker7BirthdayComponents.day = 20
     
     
-    winker7.profilePhoto = UIImage.init(named: "p3")
-    winker7.name = "Jamel"
+    winker7.profilePhoto = UIImage.init(named: "p7")
+    winker7.name = "Gina"
     winker7.country = "US"
     winker7.state = ""
     winker7.city = "New York"
     winker7.birthday = calendar?.dateFromComponents(winker1BirthdayComponents)
-    winker7.sex = Sex(value: SexCode.Male.rawValue)
+    winker7.sex = Sex(value: SexCode.Female.rawValue)
     winker7.maritalStatus = MaritalStatus(value: MaritalStatusCode.Separated.rawValue)
     
     wink7.winker = winker7
@@ -344,7 +344,7 @@ func winks() -> [Wink] {
     winker8BirthdayComponents.day = 12
     
     
-    winker8.profilePhoto = UIImage.init(named: "p3")
+    winker8.profilePhoto = UIImage.init(named: "p8")
     winker8.name = "Jamel"
     winker8.country = "IT"
     winker8.state = ""

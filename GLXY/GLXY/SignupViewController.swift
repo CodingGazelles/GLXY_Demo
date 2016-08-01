@@ -1,8 +1,8 @@
 //
-//  ViewController.swift
+//  CreateAccountViewController.swift
 //  GLXY
 //
-//  Created by Tancrède on 6/29/16.
+//  Created by Tancrède on 6/30/16.
 //  Copyright © 2016 glxy.eu. All rights reserved.
 //
 
@@ -12,39 +12,32 @@ import ReSwift
 
 
 
-class WelcomeViewController: UIViewController {
+class SignupViewController: UIViewController {
     
     let store = AppStateStore.defaultStore()
     var state: AppState!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AppLogger.debug("WelcomeViewController did load")
+        AppLogger.debug("SignupViewController did load")
         
-//        navigationController!.navigationBarHidden = false
-//        navigationController!.toolbarHidden = true
+        
+        
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     
-
-    @IBAction func signInButtonClicked(sender: AnyObject) {
-        AppLogger.debug("signInButtonClicked")
-    }
-
-    @IBAction func createAccountButtonClicked(sender: AnyObject) {
-        AppLogger.debug("createAccountButtonClicked")
-    }
-    
-    @IBAction func unwindToWelcomeView(sender: UIStoryboardSegue){
+    @IBAction func unwindToSignupView(sender: UIStoryboardSegue){
         AppLogger.debug("backButtonClicked")
     }
+    
+    
 }
 
 
@@ -57,7 +50,7 @@ class WelcomeViewController: UIViewController {
  See https://github.com/ReSwift/ReSwift for more explication
  
  */
-extension WelcomeViewController: StoreSubscriber {
+extension SignupViewController: StoreSubscriber {
     
     
     override func viewWillAppear( animated: Bool) {
@@ -73,11 +66,10 @@ extension WelcomeViewController: StoreSubscriber {
     }
     
     func newState(state: AppState) {
-        AppLogger.debug("New State received by WelcomeViewController: \(state)")
+        AppLogger.debug("New State received by CreateAccountViewController: \(state)")
         
         // UPdate UI
         
     }
     
 }
-

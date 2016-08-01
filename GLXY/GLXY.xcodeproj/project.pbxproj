@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DF218F9C1D4A87CD00FBB684 /* InitialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF218F9B1D4A87CD00FBB684 /* InitialState.swift */; };
+		DF218FAA1D4BE98200FBB684 /* UserSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF218FA91D4BE98200FBB684 /* UserSearchResultsViewController.swift */; };
 		DF2C47D81D3ADF640016344D /* Toolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2C47D71D3ADF640016344D /* Toolbar.xib */; };
 		DF2C47DD1D3AEF260016344D /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C47DC1D3AEF260016344D /* ToolbarView.swift */; };
 		DF4C63291D36A86B00CD19A6 /* WinkTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C63281D36A86A00CD19A6 /* WinkTableCellView.swift */; };
 		DF9093C81D2C288A0079B608 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */; };
 		DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */; };
-		DF90D4271D258BD6009EF0C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4261D258BD6009EF0C2 /* LoginViewController.swift */; };
+		DF90D4271D258BD6009EF0C2 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4261D258BD6009EF0C2 /* SigninViewController.swift */; };
 		DF90D42A1D25933E009EF0C2 /* StateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4291D25933E009EF0C2 /* StateStore.swift */; };
 		DF90D43D1D25A5F5009EF0C2 /* Box.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DF90D4311D25A5F5009EF0C2 /* Box.framework.dSYM */; };
 		DF90D43E1D25A5F5009EF0C2 /* BrightFutures.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DF90D4321D25A5F5009EF0C2 /* BrightFutures.framework.dSYM */; };
@@ -32,7 +33,7 @@
 		DF90D4521D25AD33009EF0C2 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4511D25AD33009EF0C2 /* AppReducer.swift */; };
 		DF90D4541D25AE79009EF0C2 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4531D25AE79009EF0C2 /* AppAction.swift */; };
 		DF90D4561D25B52F009EF0C2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4551D25B52F009EF0C2 /* AppError.swift */; };
-		DF90D4581D25B7C4009EF0C2 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4571D25B7C4009EF0C2 /* CreateAccountViewController.swift */; };
+		DF90D4581D25B7C4009EF0C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4571D25B7C4009EF0C2 /* SignupViewController.swift */; };
 		DF90D45F1D26B4F4009EF0C2 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D4371D25A5F5009EF0C2 /* Box.framework */; };
 		DF90D4601D26B4F4009EF0C2 /* Box.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D4371D25A5F5009EF0C2 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF90D4611D26B4F4009EF0C2 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D4381D25A5F5009EF0C2 /* BrightFutures.framework */; };
@@ -59,7 +60,7 @@
 		DFDABEB81D3422090081DF86 /* WinkTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDABEB71D3422090081DF86 /* WinkTableCellView.xib */; };
 		DFDABEBA1D342F6B0081DF86 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDABEB91D342F6B0081DF86 /* UIImageView.swift */; };
 		DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905F91D2EAC570038B5E7 /* AppTextField.swift */; };
-		DFE905FD1D2EFCB00038B5E7 /* RegisterAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905FC1D2EFCB00038B5E7 /* RegisterAccountViewController.swift */; };
+		DFE905FD1D2EFCB00038B5E7 /* EditMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905FC1D2EFCB00038B5E7 /* EditMyProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,12 +101,13 @@
 
 /* Begin PBXFileReference section */
 		DF218F9B1D4A87CD00FBB684 /* InitialState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialState.swift; sourceTree = "<group>"; };
+		DF218FA91D4BE98200FBB684 /* UserSearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultsViewController.swift; sourceTree = "<group>"; };
 		DF2C47D71D3ADF640016344D /* Toolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Toolbar.xib; sourceTree = "<group>"; };
 		DF2C47DC1D3AEF260016344D /* ToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		DF4C63281D36A86A00CD19A6 /* WinkTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinkTableCellView.swift; sourceTree = "<group>"; };
 		DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersNearbyViewController.swift; sourceTree = "<group>"; };
-		DF90D4261D258BD6009EF0C2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DF90D4261D258BD6009EF0C2 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		DF90D4291D25933E009EF0C2 /* StateStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateStore.swift; sourceTree = "<group>"; };
 		DF90D42C1D2593A5009EF0C2 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		DF90D42E1D259EE2009EF0C2 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
@@ -126,7 +128,7 @@
 		DF90D4511D25AD33009EF0C2 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		DF90D4531D25AE79009EF0C2 /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		DF90D4551D25B52F009EF0C2 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
-		DF90D4571D25B7C4009EF0C2 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		DF90D4571D25B7C4009EF0C2 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DF9C81AA1D40105F005CD4E0 /* WinksOverviewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinksOverviewTableController.swift; sourceTree = "<group>"; };
 		DF9C81AD1D401CF8005CD4E0 /* AppObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppObjects.swift; sourceTree = "<group>"; };
 		DF9C81B01D42A26E005CD4E0 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -147,7 +149,7 @@
 		DFDABEB71D3422090081DF86 /* WinkTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinkTableCellView.xib; sourceTree = "<group>"; };
 		DFDABEB91D342F6B0081DF86 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		DFE905F91D2EAC570038B5E7 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
-		DFE905FC1D2EFCB00038B5E7 /* RegisterAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterAccountViewController.swift; sourceTree = "<group>"; };
+		DFE905FC1D2EFCB00038B5E7 /* EditMyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMyProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,13 +193,14 @@
 			isa = PBXGroup;
 			children = (
 				DFA3F5A21D246CAC00490A95 /* WelcomeViewController.swift */,
-				DF90D4261D258BD6009EF0C2 /* LoginViewController.swift */,
-				DF90D4571D25B7C4009EF0C2 /* CreateAccountViewController.swift */,
+				DF90D4261D258BD6009EF0C2 /* SigninViewController.swift */,
+				DF90D4571D25B7C4009EF0C2 /* SignupViewController.swift */,
 				DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */,
 				DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */,
-				DFE905FC1D2EFCB00038B5E7 /* RegisterAccountViewController.swift */,
+				DFE905FC1D2EFCB00038B5E7 /* EditMyProfileViewController.swift */,
 				DFDABEB51D340B6E0081DF86 /* ProfileOverviewViewController.swift */,
 				DF9C81AA1D40105F005CD4E0 /* WinksOverviewTableController.swift */,
+				DF218FA91D4BE98200FBB684 /* UserSearchResultsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -529,14 +532,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF90D4581D25B7C4009EF0C2 /* CreateAccountViewController.swift in Sources */,
+				DF90D4581D25B7C4009EF0C2 /* SignupViewController.swift in Sources */,
+				DF218FAA1D4BE98200FBB684 /* UserSearchResultsViewController.swift in Sources */,
 				DF90D44C1D25A701009EF0C2 /* AppState.swift in Sources */,
 				DF2C47DD1D3AEF260016344D /* ToolbarView.swift in Sources */,
 				DF90D44E1D25A831009EF0C2 /* AppLogger.swift in Sources */,
 				DFA3F5A31D246CAC00490A95 /* WelcomeViewController.swift in Sources */,
 				DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */,
 				DF9C81AE1D401CF8005CD4E0 /* AppObjects.swift in Sources */,
-				DFE905FD1D2EFCB00038B5E7 /* RegisterAccountViewController.swift in Sources */,
+				DFE905FD1D2EFCB00038B5E7 /* EditMyProfileViewController.swift in Sources */,
 				DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */,
 				DF9093C81D2C288A0079B608 /* UserSearchViewController.swift in Sources */,
 				DF9C81AB1D40105F005CD4E0 /* WinksOverviewTableController.swift in Sources */,
@@ -546,7 +550,7 @@
 				DF90D4541D25AE79009EF0C2 /* AppAction.swift in Sources */,
 				DFDABEBA1D342F6B0081DF86 /* UIImageView.swift in Sources */,
 				DF4C63291D36A86B00CD19A6 /* WinkTableCellView.swift in Sources */,
-				DF90D4271D258BD6009EF0C2 /* LoginViewController.swift in Sources */,
+				DF90D4271D258BD6009EF0C2 /* SigninViewController.swift in Sources */,
 				DF9C81B11D42A26E005CD4E0 /* Subscription.swift in Sources */,
 				DF90D4561D25B52F009EF0C2 /* AppError.swift in Sources */,
 				DF218F9C1D4A87CD00FBB684 /* InitialState.swift in Sources */,

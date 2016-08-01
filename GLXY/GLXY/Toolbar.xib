@@ -19,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="30" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chat" translatesAutoresizingMaskIntoConstraints="NO" id="Wwg-vS-X5u" userLabel="Chat">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="Wwg-vS-X5u" userLabel="Home">
                     <rect key="frame" x="30" y="288" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="24" id="3VC-6J-sFj"/>
@@ -41,7 +41,7 @@
                     <rect key="frame" x="168" y="0.0" width="90" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UsersNearby" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-lA-7ag" userLabel="Nearby">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nearby" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-lA-7ag" userLabel="Nearby">
                     <rect key="frame" x="258" y="288" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="hwH-Eu-ZYP"/>
@@ -109,10 +109,10 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
     <resources>
-        <image name="Chat" width="69" height="63"/>
-        <image name="HotOrNot" width="52" height="67"/>
+        <image name="Home" width="64" height="64"/>
+        <image name="HotOrNot" width="64" height="64"/>
         <image name="More" width="64" height="45"/>
-        <image name="UserSearch" width="68" height="68"/>
-        <image name="UsersNearby" width="67" height="68"/>
+        <image name="Nearby" width="64" height="64"/>
+        <image name="UserSearch" width="64" height="64"/>
     </resources>
 </document>
