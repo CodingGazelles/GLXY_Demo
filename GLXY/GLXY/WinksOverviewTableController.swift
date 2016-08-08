@@ -25,14 +25,14 @@ class WinksOverviewTableController: UITableViewController {
         
         AppLogger.debug("WinksOverviewTableController did load")
         
+        state = store.state
+        
         cellViewNib = UINib.init(nibName: "WinkTableCellView", bundle: nil)
         tableView.registerNib( cellViewNib, forCellReuseIdentifier: cellIdentifier)
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 89
         tableView.rowHeight = 89
-        
-        state = store.state
         
     }
     

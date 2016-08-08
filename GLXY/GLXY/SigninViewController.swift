@@ -20,7 +20,7 @@ class SigninViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AppLogger.debug("LoginViewController did load")
+        AppLogger.debug("SigninViewController did load")
         
         
         
@@ -63,7 +63,7 @@ extension SigninViewController: StoreSubscriber {
     }
     
     func newState(state: AppState) {
-        AppLogger.debug("New State received by LoginViewController: \(state)")
+        AppLogger.debug("New State received by SigninViewController: \(state)")
         
         // UPdate UI
         

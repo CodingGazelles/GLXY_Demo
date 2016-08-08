@@ -18,35 +18,17 @@ protocol AppObjectType: Loggable {}
 
 
 
-class Wink: AppObjectType {
+class Wink: AppObjectType, TimeUtils {
     
     var winker: User!
     var date: NSDate!
     
-    func timeTillNow() -> (Int, String) {
-        
-        let calendar = NSCalendar.currentCalendar()
-        let dateComponents = calendar.components([.Year, .Month, .Day, .Hour, .Minute]
-            , fromDate: date
-            , toDate: NSDate()
-            , options: .WrapComponents)
-        
-        if dateComponents.year != 0 {
-            return (dateComponents.year, "y")
-            
-        } else if dateComponents.month != 0 {
-            return ( dateComponents.month, "m")
-            
-        } else if dateComponents.day != 0 {
-            return (dateComponents.day, "d")
-            
-        } else if dateComponents.hour != 0 {
-            return (dateComponents.hour, "h")
-            
-        } else {
-            return (dateComponents.minute, "mn")
-        }
-    }
+}
+
+class Hot: AppObjectType, TimeUtils {
+    
+    var hotter: User!
+    var date: NSDate!
     
 }
 
@@ -62,6 +44,10 @@ class User: AppObjectType {
     var maritalStatus: MaritalStatus!
     var sex: Sex!
     var birthday: NSDate!
+    
+    var isOnline = false
+    
+    var receivedHots = [Hot]()
     
     var receivedWinks = [Wink]()
     
@@ -159,3 +145,41 @@ enum Sex {
         return toString().hashValue
     }
 }
+
+
+protocol TimeUtils {
+    var date: NSDate! {get set}
+}
+
+    
+extension TimeUtils {
+    
+    func timeTillNow() -> (Int, String) {
+        
+        let calendar = NSCalendar.currentCalendar()
+        let dateComponents = calendar.components([.Year, .Month, .Day, .Hour, .Minute]
+            , fromDate: date
+            , toDate: NSDate()
+            , options: .WrapComponents)
+        
+        if dateComponents.year != 0 {
+            return (dateComponents.year, "y")
+            
+        } else if dateComponents.month != 0 {
+            return ( dateComponents.month, "m")
+            
+        } else if dateComponents.day != 0 {
+            return (dateComponents.day, "d")
+            
+        } else if dateComponents.hour != 0 {
+            return (dateComponents.hour, "h")
+            
+        } else {
+            return (dateComponents.minute, "mn")
+        }
+        
+    }
+    
+}
+
+

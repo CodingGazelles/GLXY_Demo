@@ -28,6 +28,7 @@ import ReSwift
 struct AppState: StateType, Loggable  {
     
     var winksOverviewState = WinksOverviewState()
+    var hotOrNotState = HotOrNotState()
     
 }
 
@@ -35,5 +36,16 @@ struct AppState: StateType, Loggable  {
 struct WinksOverviewState {
     
     var winks = [Wink]()
+    
+}
+
+struct HotOrNotState {
+    
+    var userList = [User]()
+    var index = 0
+    
+    var hotList = [User]()
+    var notList = [User]()
+    
     
 }
