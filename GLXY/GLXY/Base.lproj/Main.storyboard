@@ -556,19 +556,16 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                                 <gestureRecognizers/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="70" id="8ea-5l-Df8"/>
-                                                                    <constraint firstAttribute="height" constant="70" id="RLO-UZ-5l3"/>
+                                                                    <constraint firstAttribute="width" secondItem="kms-hF-jfg" secondAttribute="height" multiplier="1:1" id="Jty-nN-NBs"/>
                                                                 </constraints>
                                                                 <variation key="default">
                                                                     <mask key="constraints">
-                                                                        <exclude reference="8ea-5l-Df8"/>
-                                                                        <exclude reference="RLO-UZ-5l3"/>
+                                                                        <exclude reference="Jty-nN-NBs"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <variation key="heightClass=regular-widthClass=compact">
                                                                     <mask key="constraints">
-                                                                        <include reference="8ea-5l-Df8"/>
-                                                                        <include reference="RLO-UZ-5l3"/>
+                                                                        <include reference="Jty-nN-NBs"/>
                                                                     </mask>
                                                                 </variation>
                                                             </imageView>
@@ -576,19 +573,16 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                                 <gestureRecognizers/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="96" id="6ny-y0-1Kb"/>
-                                                                    <constraint firstAttribute="height" constant="96" id="ZtN-6t-O6f"/>
+                                                                    <constraint firstAttribute="width" secondItem="8rY-Ss-E5Q" secondAttribute="height" multiplier="1:1" id="LzP-9G-0eh"/>
                                                                 </constraints>
                                                                 <variation key="default">
                                                                     <mask key="constraints">
-                                                                        <exclude reference="6ny-y0-1Kb"/>
-                                                                        <exclude reference="ZtN-6t-O6f"/>
+                                                                        <exclude reference="LzP-9G-0eh"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <variation key="heightClass=regular-widthClass=compact">
                                                                     <mask key="constraints">
-                                                                        <include reference="6ny-y0-1Kb"/>
-                                                                        <include reference="ZtN-6t-O6f"/>
+                                                                        <include reference="LzP-9G-0eh"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <connections>
@@ -599,19 +593,16 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                                 <gestureRecognizers/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="96" id="BYp-5i-jMf"/>
-                                                                    <constraint firstAttribute="height" constant="96" id="vQI-XG-cYu"/>
+                                                                    <constraint firstAttribute="width" secondItem="fyF-xS-nY3" secondAttribute="height" multiplier="1:1" id="Bg1-Nl-tt2"/>
                                                                 </constraints>
                                                                 <variation key="default">
                                                                     <mask key="constraints">
-                                                                        <exclude reference="BYp-5i-jMf"/>
-                                                                        <exclude reference="vQI-XG-cYu"/>
+                                                                        <exclude reference="Bg1-Nl-tt2"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <variation key="heightClass=regular-widthClass=compact">
                                                                     <mask key="constraints">
-                                                                        <include reference="BYp-5i-jMf"/>
-                                                                        <include reference="vQI-XG-cYu"/>
+                                                                        <include reference="Bg1-Nl-tt2"/>
                                                                     </mask>
                                                                 </variation>
                                                                 <connections>
@@ -625,7 +616,10 @@
                                                             <constraint firstItem="kms-hF-jfg" firstAttribute="centerY" secondItem="Mqm-xe-aFP" secondAttribute="centerY" id="3nY-Sr-vd7"/>
                                                             <constraint firstItem="8rY-Ss-E5Q" firstAttribute="centerY" secondItem="Mqm-xe-aFP" secondAttribute="centerY" id="DSi-WI-5OB"/>
                                                             <constraint firstItem="fyF-xS-nY3" firstAttribute="centerY" secondItem="Mqm-xe-aFP" secondAttribute="centerY" id="IMm-Rp-4Wa"/>
+                                                            <constraint firstItem="8rY-Ss-E5Q" firstAttribute="width" secondItem="Mqm-xe-aFP" secondAttribute="width" multiplier="0.34" id="Rc2-yH-KgU"/>
+                                                            <constraint firstItem="fyF-xS-nY3" firstAttribute="width" secondItem="Mqm-xe-aFP" secondAttribute="width" multiplier="0.34" id="Rwe-lP-S43"/>
                                                             <constraint firstAttribute="trailing" secondItem="fyF-xS-nY3" secondAttribute="trailing" id="Thr-9K-0sJ"/>
+                                                            <constraint firstItem="kms-hF-jfg" firstAttribute="width" secondItem="Mqm-xe-aFP" secondAttribute="width" multiplier="0.25" id="YM5-XC-IWK"/>
                                                             <constraint firstItem="8rY-Ss-E5Q" firstAttribute="leading" secondItem="Mqm-xe-aFP" secondAttribute="leading" id="ZUu-vb-bzz"/>
                                                             <constraint firstItem="kms-hF-jfg" firstAttribute="centerX" secondItem="Mqm-xe-aFP" secondAttribute="centerX" id="spi-ng-UZ9"/>
                                                         </constraints>
@@ -638,10 +632,10 @@
                                                                 <exclude reference="1ug-zk-QHh"/>
                                                                 <exclude reference="DSi-WI-5OB"/>
                                                                 <exclude reference="ZUu-vb-bzz"/>
-                                                                <exclude reference="IMm-Rp-4Wa"/>
-                                                                <exclude reference="Thr-9K-0sJ"/>
                                                                 <exclude reference="3nY-Sr-vd7"/>
                                                                 <exclude reference="spi-ng-UZ9"/>
+                                                                <exclude reference="IMm-Rp-4Wa"/>
+                                                                <exclude reference="Thr-9K-0sJ"/>
                                                             </mask>
                                                         </variation>
                                                         <variation key="heightClass=regular-widthClass=compact">
@@ -653,10 +647,10 @@
                                                                 <include reference="1ug-zk-QHh"/>
                                                                 <include reference="DSi-WI-5OB"/>
                                                                 <include reference="ZUu-vb-bzz"/>
-                                                                <include reference="IMm-Rp-4Wa"/>
-                                                                <include reference="Thr-9K-0sJ"/>
                                                                 <include reference="3nY-Sr-vd7"/>
                                                                 <include reference="spi-ng-UZ9"/>
+                                                                <include reference="IMm-Rp-4Wa"/>
+                                                                <include reference="Thr-9K-0sJ"/>
                                                             </mask>
                                                         </variation>
                                                         <connections>

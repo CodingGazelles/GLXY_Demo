@@ -86,11 +86,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GLXY/GLXY/HotOrNotViewController.swift"
-            timestampString = "492719607.232676"
+            timestampString = "492723430.109099"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "102"
-            endingLineNumber = "102"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "updateUI()"
             landmarkType = "5">
          </BreakpointContent>

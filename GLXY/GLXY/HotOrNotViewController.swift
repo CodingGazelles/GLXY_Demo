@@ -11,6 +11,7 @@ import UIKit
 import ReSwift
 
 
+
 class HotOrNotViewController: UIViewController {
     
     
