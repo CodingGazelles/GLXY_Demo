@@ -14,8 +14,8 @@ import ReSwift
 
 class WelcomeViewController: UIViewController {
     
-    let store = AppStateStore.defaultStore()
-    var state: AppState!
+    let store = XYStateStore.defaultStore()
+    var state: XYAppState!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,7 +72,7 @@ extension WelcomeViewController: StoreSubscriber {
         store.unsubscribe(self)
     }
     
-    func newState(state: AppState) {
+    func newState(state: XYAppState) {
         AppLogger.debug("New State received by WelcomeViewController: \(state)")
         
         // UPdate UI

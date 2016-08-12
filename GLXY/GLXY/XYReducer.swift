@@ -23,24 +23,25 @@ import UIKit
  
  */
 
-struct AppReducer: Reducer {
+struct XYReducer: Reducer {
     
-    func handleAction( action: Action, state: AppState?) -> AppState {
+    typealias ReducerStateType = XYAppState
+    
+    let hotOrNotReducer = XYReducerHotOrNot()
+    
+    func handleAction(action: Action, state: ReducerStateType?) -> ReducerStateType {
         
-        var state = state ?? AppState()
+        var state = state ?? XYAppState()
         
-        
-        
-        guard action is AppAction else {
-            
-            AppLogger.error( "Reducer received an unidentified action. Unable to treat it. \(action)", error: nil)
-            
+        guard (action is XYAction) else {
+            AppLogger.error("Reducer received an action that does not conform to XYAction. Unable to treat it. \(action)")
             return state
         }
         
-        
-        
-//        let action = action as! AppAction
+        return _handleAction(action: action as! XYAction, state: state)
+    }
+    
+    func _handleAction( action action: XYAction, var state: XYAppState) -> XYAppState {
         
         switch action {
             
@@ -57,15 +58,17 @@ struct AppReducer: Reducer {
 //            
             
             
-        case _ as AppInitAction:
-            
+        case _ as XYInitAction:
             state = initialState()
+            
+        case _ as XYActionHotOrNot:
+            state = hotOrNotReducer.handleAction(action: action as! XYActionHotOrNot, state: state)
+            
             
 
         // MARK: Unknown actions
         default:
-            AppLogger.error( "Reducer received an unidentified action. Unable to treat it. \(action)", error: nil)
-            
+            AppLogger.error( "Reducer received an unidentified action. Unable to treat it. \(action)")
         }
     
         return state

@@ -12,9 +12,9 @@ import UIKit
 
 
 
-func initialState() -> AppState {
+func initialState() -> XYAppState {
     
-    var state = AppState()
+    var state = XYAppState()
     
     
     state.winksOverviewState.winks = InitialState.winks
@@ -28,10 +28,10 @@ func initialState() -> AppState {
 
 class InitialState {
     
-    private static var _winks: [Wink]?
-    private static var _users: [User]?
+    private static var _winks: [XYWink]?
+    private static var _users: [XYUser]?
     
-    static var winks:[Wink] {
+    static var winks:[XYWink] {
         get {
             
             if _winks == nil {
@@ -44,11 +44,11 @@ class InitialState {
     }
     
     
-    static var users:[User] {
+    static var users:[XYUser] {
         get {
             
             if _users == nil {
-                _users = initUsers()
+                _users = initXYUsers()
             }
             
             return _users!

@@ -14,8 +14,8 @@ import ReSwift
 
 class SignupViewController: UIViewController {
     
-    let store = AppStateStore.defaultStore()
-    var state: AppState!
+    let store = XYStateStore.defaultStore()
+    var state: XYAppState!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +65,7 @@ extension SignupViewController: StoreSubscriber {
         store.unsubscribe(self)
     }
     
-    func newState(state: AppState) {
+    func newState(state: XYAppState) {
         AppLogger.debug("New State received by CreateAccountViewController: \(state)")
         
         // UPdate UI

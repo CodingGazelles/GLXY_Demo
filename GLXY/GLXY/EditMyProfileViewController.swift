@@ -14,8 +14,8 @@ import UIKit
 class EditMyProfileViewController: UIViewController {
     
 
-    let store = AppStateStore.defaultStore()
-    var state: AppState!
+    let store = XYStateStore.defaultStore()
+    var state: XYAppState!
     
     override func viewDidLoad() {
         super.viewDidLoad()

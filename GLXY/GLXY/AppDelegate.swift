@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     // The object that will manage the state of the UI
-    lazy var store = AppStateStore.defaultStore()
+    lazy var store = XYStateStore.defaultStore()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

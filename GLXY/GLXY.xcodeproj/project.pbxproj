@@ -11,8 +11,6 @@
 		DF218FAA1D4BE98200FBB684 /* UserSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF218FA91D4BE98200FBB684 /* UserSearchResultsViewController.swift */; };
 		DF2BA2F81D52751200E01ABD /* InitWinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2BA2F71D52751200E01ABD /* InitWinkList.swift */; };
 		DF2BA2FA1D52754100E01ABD /* InitUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2BA2F91D52754100E01ABD /* InitUserList.swift */; };
-		DF2C47D81D3ADF640016344D /* Toolbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2C47D71D3ADF640016344D /* Toolbar.xib */; };
-		DF2C47DD1D3AEF260016344D /* ToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2C47DC1D3AEF260016344D /* ToolbarView.swift */; };
 		DF4C63291D36A86B00CD19A6 /* WinkTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4C63281D36A86A00CD19A6 /* WinkTableCellView.swift */; };
 		DF9093C81D2C288A0079B608 /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */; };
 		DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */; };
@@ -30,10 +28,10 @@
 		DF90D4461D25A5F5009EF0C2 /* CleanroomLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D43A1D25A5F5009EF0C2 /* CleanroomLogger.framework */; };
 		DF90D4471D25A5F5009EF0C2 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D43B1D25A5F5009EF0C2 /* Result.framework */; };
 		DF90D4481D25A5F5009EF0C2 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D43C1D25A5F5009EF0C2 /* ReSwift.framework */; };
-		DF90D44C1D25A701009EF0C2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D44B1D25A701009EF0C2 /* AppState.swift */; };
+		DF90D44C1D25A701009EF0C2 /* XYAppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D44B1D25A701009EF0C2 /* XYAppState.swift */; };
 		DF90D44E1D25A831009EF0C2 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D44D1D25A831009EF0C2 /* AppLogger.swift */; };
-		DF90D4521D25AD33009EF0C2 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4511D25AD33009EF0C2 /* AppReducer.swift */; };
-		DF90D4541D25AE79009EF0C2 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4531D25AE79009EF0C2 /* AppAction.swift */; };
+		DF90D4521D25AD33009EF0C2 /* XYReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4511D25AD33009EF0C2 /* XYReducer.swift */; };
+		DF90D4541D25AE79009EF0C2 /* XYAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4531D25AE79009EF0C2 /* XYAction.swift */; };
 		DF90D4561D25B52F009EF0C2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4551D25B52F009EF0C2 /* AppError.swift */; };
 		DF90D4581D25B7C4009EF0C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF90D4571D25B7C4009EF0C2 /* SignupViewController.swift */; };
 		DF90D45F1D26B4F4009EF0C2 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D4371D25A5F5009EF0C2 /* Box.framework */; };
@@ -48,6 +46,7 @@
 		DF90D4681D26B4F4009EF0C2 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D43B1D25A5F5009EF0C2 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF90D4691D26B4F4009EF0C2 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D43C1D25A5F5009EF0C2 /* ReSwift.framework */; };
 		DF90D46A1D26B4F4009EF0C2 /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF90D43C1D25A5F5009EF0C2 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DF9132701D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF91326F1D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift */; };
 		DF9C81AB1D40105F005CD4E0 /* WinksOverviewTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C81AA1D40105F005CD4E0 /* WinksOverviewTableController.swift */; };
 		DF9C81AE1D401CF8005CD4E0 /* AppObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C81AD1D401CF8005CD4E0 /* AppObjects.swift */; };
 		DF9C81B11D42A26E005CD4E0 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9C81B01D42A26E005CD4E0 /* Subscription.swift */; };
@@ -107,8 +106,6 @@
 		DF218FA91D4BE98200FBB684 /* UserSearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchResultsViewController.swift; sourceTree = "<group>"; };
 		DF2BA2F71D52751200E01ABD /* InitWinkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitWinkList.swift; sourceTree = "<group>"; };
 		DF2BA2F91D52754100E01ABD /* InitUserList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitUserList.swift; sourceTree = "<group>"; };
-		DF2C47D71D3ADF640016344D /* Toolbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Toolbar.xib; sourceTree = "<group>"; };
-		DF2C47DC1D3AEF260016344D /* ToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolbarView.swift; sourceTree = "<group>"; };
 		DF4C63281D36A86A00CD19A6 /* WinkTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinkTableCellView.swift; sourceTree = "<group>"; };
 		DF9093C71D2C288A0079B608 /* UserSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
 		DF9093C91D2C29040079B608 /* UsersNearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersNearbyViewController.swift; sourceTree = "<group>"; };
@@ -128,12 +125,13 @@
 		DF90D43A1D25A5F5009EF0C2 /* CleanroomLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CleanroomLogger.framework; path = Carthage/Build/iOS/CleanroomLogger.framework; sourceTree = "<group>"; };
 		DF90D43B1D25A5F5009EF0C2 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		DF90D43C1D25A5F5009EF0C2 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
-		DF90D44B1D25A701009EF0C2 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DF90D44B1D25A701009EF0C2 /* XYAppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYAppState.swift; sourceTree = "<group>"; };
 		DF90D44D1D25A831009EF0C2 /* AppLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
-		DF90D4511D25AD33009EF0C2 /* AppReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
-		DF90D4531D25AE79009EF0C2 /* AppAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		DF90D4511D25AD33009EF0C2 /* XYReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYReducer.swift; sourceTree = "<group>"; };
+		DF90D4531D25AE79009EF0C2 /* XYAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYAction.swift; sourceTree = "<group>"; };
 		DF90D4551D25B52F009EF0C2 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		DF90D4571D25B7C4009EF0C2 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DF91326F1D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYReducerHotOrNot.swift; sourceTree = "<group>"; };
 		DF9C81AA1D40105F005CD4E0 /* WinksOverviewTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WinksOverviewTableController.swift; sourceTree = "<group>"; };
 		DF9C81AD1D401CF8005CD4E0 /* AppObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppObjects.swift; sourceTree = "<group>"; };
 		DF9C81B01D42A26E005CD4E0 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
@@ -231,15 +229,6 @@
 			name = WinkTableCellView;
 			sourceTree = "<group>";
 		};
-		DF2C47DB1D3AEEFF0016344D /* ToolbarView */ = {
-			isa = PBXGroup;
-			children = (
-				DF2C47D71D3ADF640016344D /* Toolbar.xib */,
-				DF2C47DC1D3AEF260016344D /* ToolbarView.swift */,
-			);
-			name = ToolbarView;
-			sourceTree = "<group>";
-		};
 		DF90D4231D25879D009EF0C2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,11 +244,10 @@
 			children = (
 				DF9C81AF1D42A25E005CD4E0 /* ReSwift */,
 				DF90D44F1D25AC43009EF0C2 /* Actions */,
-				DF90D4501D25ACCD009EF0C2 /* Reducers */,
 				DF90D4291D25933E009EF0C2 /* StateStore.swift */,
-				DF90D44B1D25A701009EF0C2 /* AppState.swift */,
+				DF90D44B1D25A701009EF0C2 /* XYAppState.swift */,
 				DF2BA2F61D5273E600E01ABD /* InitialState */,
-				DF9C81AD1D401CF8005CD4E0 /* AppObjects.swift */,
+				DF91326E1D5E1C1B00B2AAF5 /* Model */,
 			);
 			name = AppState;
 			sourceTree = "<group>";
@@ -270,7 +258,6 @@
 				DFA3F5A41D246CAC00490A95 /* Main.storyboard */,
 				DFA3F5A91D246CAC00490A95 /* LaunchScreen.storyboard */,
 				DF2C47DA1D3AEEA20016344D /* WinkTableCellView */,
-				DF2C47DB1D3AEEFF0016344D /* ToolbarView */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -323,17 +310,19 @@
 		DF90D44F1D25AC43009EF0C2 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				DF90D4531D25AE79009EF0C2 /* AppAction.swift */,
+				DF90D4531D25AE79009EF0C2 /* XYAction.swift */,
+				DF90D4511D25AD33009EF0C2 /* XYReducer.swift */,
+				DF91326F1D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
 		};
-		DF90D4501D25ACCD009EF0C2 /* Reducers */ = {
+		DF91326E1D5E1C1B00B2AAF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DF90D4511D25AD33009EF0C2 /* AppReducer.swift */,
+				DF9C81AD1D401CF8005CD4E0 /* AppObjects.swift */,
 			);
-			name = Reducers;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DF9C81AF1D42A25E005CD4E0 /* ReSwift */ = {
@@ -517,7 +506,6 @@
 				DF90D43E1D25A5F5009EF0C2 /* BrightFutures.framework.dSYM in Resources */,
 				DF90D4411D25A5F5009EF0C2 /* Result.framework.dSYM in Resources */,
 				DF90D43D1D25A5F5009EF0C2 /* Box.framework.dSYM in Resources */,
-				DF2C47D81D3ADF640016344D /* Toolbar.xib in Resources */,
 				DF90D43F1D25A5F5009EF0C2 /* CleanroomASL.framework.dSYM in Resources */,
 				DFDABEB81D3422090081DF86 /* WinkTableCellView.xib in Resources */,
 				DFA3F5AB1D246CAC00490A95 /* LaunchScreen.storyboard in Resources */,
@@ -551,8 +539,7 @@
 			files = (
 				DF90D4581D25B7C4009EF0C2 /* SignupViewController.swift in Sources */,
 				DF218FAA1D4BE98200FBB684 /* UserSearchResultsViewController.swift in Sources */,
-				DF90D44C1D25A701009EF0C2 /* AppState.swift in Sources */,
-				DF2C47DD1D3AEF260016344D /* ToolbarView.swift in Sources */,
+				DF90D44C1D25A701009EF0C2 /* XYAppState.swift in Sources */,
 				DF90D44E1D25A831009EF0C2 /* AppLogger.swift in Sources */,
 				DFA3F5A31D246CAC00490A95 /* WelcomeViewController.swift in Sources */,
 				DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */,
@@ -565,8 +552,9 @@
 				DF90D42A1D25933E009EF0C2 /* StateStore.swift in Sources */,
 				DFDABEB61D340B6E0081DF86 /* ProfileOverviewViewController.swift in Sources */,
 				DF2BA2F81D52751200E01ABD /* InitWinkList.swift in Sources */,
-				DF90D4521D25AD33009EF0C2 /* AppReducer.swift in Sources */,
-				DF90D4541D25AE79009EF0C2 /* AppAction.swift in Sources */,
+				DF9132701D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift in Sources */,
+				DF90D4521D25AD33009EF0C2 /* XYReducer.swift in Sources */,
+				DF90D4541D25AE79009EF0C2 /* XYAction.swift in Sources */,
 				DFDABEBA1D342F6B0081DF86 /* UIImageView.swift in Sources */,
 				DF4C63291D36A86B00CD19A6 /* WinkTableCellView.swift in Sources */,
 				DF90D4271D258BD6009EF0C2 /* SigninViewController.swift in Sources */,

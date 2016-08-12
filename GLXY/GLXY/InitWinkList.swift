@@ -1,5 +1,5 @@
 //
-//  WinkList.swift
+//  XYWinkList.swift
 //  GLXY
 //
 //  Created by Tancrède on 8/3/16.
@@ -11,9 +11,9 @@ import UIKit
 
 
 
-func initWinks() -> [Wink] {
+func initWinks() -> [XYWink] {
     
-    var winks = [Wink]()
+    var winks = [XYWink]()
     
     
     let calendar = NSCalendar(identifier: NSCalendarIdentifierGregorian)
@@ -22,7 +22,7 @@ func initWinks() -> [Wink] {
     
     // user 0
     
-    let wink0 = Wink()
+    let wink0 = XYWink()
     wink0.winker = InitialState.users[0]
     
     let wink0DateComponents = NSDateComponents()
@@ -43,7 +43,7 @@ func initWinks() -> [Wink] {
     
     // user 1
     
-    let wink1 = Wink()
+    let wink1 = XYWink()
     wink1.winker = InitialState.users[1]
     
     let wink1DateComponents = NSDateComponents()
@@ -63,9 +63,9 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 2
+    // XYWink 2
     
-    let wink2 = Wink()
+    let wink2 = XYWink()
     wink2.winker = InitialState.users[2]
     
     
@@ -86,9 +86,9 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 3
+    // XYWink 3
     
-    let wink3 = Wink()
+    let wink3 = XYWink()
     wink3.winker = InitialState.users[3]
     
     let wink3DateComponents = NSDateComponents()
@@ -108,9 +108,9 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 4
+    // XYWink 4
     
-    let wink4 = Wink()
+    let wink4 = XYWink()
     wink4.winker = InitialState.users[4]
     
     let wink4DateComponents = NSDateComponents()
@@ -130,9 +130,9 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 5
+    // XYWink 5
     
-    let wink5 = Wink()
+    let wink5 = XYWink()
     wink5.winker = InitialState.users[5]
     
     let wink5DateComponents = NSDateComponents()
@@ -152,9 +152,9 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 6
+    // XYWink 6
     
-    let wink6 = Wink()
+    let wink6 = XYWink()
     wink6.winker = InitialState.users[6]
     
     let wink6DateComponents = NSDateComponents()
@@ -175,10 +175,10 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 7
+    // XYWink 7
     
     
-    let wink7 = Wink()
+    let wink7 = XYWink()
     wink7.winker = InitialState.users[7]
     
     let wink7DateComponents = NSDateComponents()
@@ -199,9 +199,9 @@ func initWinks() -> [Wink] {
     
     
     
-    // Wink 8
+    // XYWink 8
     
-    let wink8 = Wink()
+    let wink8 = XYWink()
     wink8.winker = InitialState.users[0]
     
     let wink8DateComponents = NSDateComponents()

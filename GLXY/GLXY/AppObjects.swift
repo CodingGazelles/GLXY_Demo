@@ -1,5 +1,5 @@
 //
-//  Wink.swift
+//  XYWink.swift
 //  GLXY
 //
 //  Created by Tancrède on 7/20/16.
@@ -14,27 +14,29 @@ import UIKit
 
 // MARK: - UI State objects
 
-protocol AppObjectType: Loggable {}
+protocol XYObjectType: Loggable {}
 
 
 
-class Wink: AppObjectType, TimeUtils {
+class XYWink: XYObjectType {
     
-    var winker: User!
+    var winker: XYUser!
     var date: NSDate!
     
 }
 
-class Hot: AppObjectType, TimeUtils {
+class XYHot: XYObjectType {
     
-    var hotter: User!
+    var hotter: XYUser!
     var date: NSDate!
     
 }
 
-class User: AppObjectType {
+class XYUser: XYObjectType {
     
     var profilePhoto: UIImage?
+    var coverPhoto: UIImage?
+    
     var name: String!
     
     var country: String!
@@ -47,9 +49,12 @@ class User: AppObjectType {
     
     var isOnline = false
     
-    var receivedHots = [Hot]()
+    var likes: Sex!
     
-    var receivedWinks = [Wink]()
+    var presentation: String!
+    
+    var receivedXYHots = [XYHot]()
+    var receivedXYWinks = [XYWink]()
     
     func age() -> Int {
         
@@ -107,33 +112,21 @@ enum MaritalStatus {
     }
 }
 
-enum SexCode: String {
-    case Male
-    case Female
-}
+enum Sex: Hashable, Equatable {
 
-enum Sex {
-    case System( SexCode)
+    case Female
+    case Male
     case Other( String)
-    
-    init( value: String) {
-        
-        let systemCode = SexCode(rawValue: value)
-        
-        guard systemCode != nil else {
-            self = .Other(value)
-            return
-        }
-        
-        self = .System(systemCode!)
-    }
     
     func toString() -> String {
         
         switch self {
             
-        case let .System( systemCode):
-            return systemCode.rawValue
+        case .Female:
+            return "Female"
+            
+        case .Male:
+            return "Male"
             
         case let .Other( userCode):
             return userCode
@@ -146,15 +139,29 @@ enum Sex {
     }
 }
 
-
-protocol TimeUtils {
-    var date: NSDate! {get set}
+func ==(lhs: Sex, rhs: Sex) -> Bool{
+    
+    switch (lhs, rhs) {
+        
+    case ( .Female, .Female):
+        return true
+        
+    case ( .Male, .Male):
+        return true
+        
+    case ( let .Other( lhsCode), let .Other( rhsCode)):
+        return lhsCode == rhsCode
+        
+    default:
+        return false
+    }
 }
 
+
+   
+
     
-extension TimeUtils {
-    
-    func timeTillNow() -> (Int, String) {
+    func timeTillNow( date: NSDate) -> (Int, String) {
         
         let calendar = NSCalendar.currentCalendar()
         let dateComponents = calendar.components([.Year, .Month, .Day, .Hour, .Minute]
@@ -180,6 +187,6 @@ extension TimeUtils {
         
     }
     
-}
+
 
 

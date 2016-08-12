@@ -17,10 +17,14 @@ class HotOrNotViewController: UIViewController {
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userLocation: UILabel!
     @IBOutlet weak var isOnline: UIImageView!
+    @IBOutlet weak var coverPhoto: UIImageView!
+    @IBOutlet weak var sexPref: UILabel!
+    @IBOutlet weak var sex: UILabel!
+    @IBOutlet weak var age: UILabel!
+    @IBOutlet weak var presentation: UILabel!
     
-    
-    let store = AppStateStore.defaultStore()
-    var state: AppState!
+    let store = XYStateStore.defaultStore()
+    var state: XYAppState!
     
     
     override func viewDidLoad() {
@@ -43,6 +47,8 @@ class HotOrNotViewController: UIViewController {
 }
 
 
+// MARK: - State subscriber
+
 extension HotOrNotViewController: StoreSubscriber {
     
     
@@ -58,10 +64,11 @@ extension HotOrNotViewController: StoreSubscriber {
         store.unsubscribe(self)
     }
     
-    func newState(state: AppState) {
+    func newState(state: XYAppState) {
         AppLogger.debug("New State received by HotOrNotViewController: \(state)")
         
-        // UPdate UI
+        self.state = state
+        
         updateUI()
         
     }
@@ -69,7 +76,26 @@ extension HotOrNotViewController: StoreSubscriber {
 }
 
 
+//MARK: - Actions and Updates
+
 extension HotOrNotViewController {
+    
+    
+    @IBAction func nextButtonClicked(sender: UITapGestureRecognizer) {
+        AppLogger.debug("nextButtonClicked")
+        
+        let _ = store.dispatch(XYActionHotOrNotNext())
+        
+    }
+    
+    @IBAction func yesButtonClicked(sender: UITapGestureRecognizer) {
+        AppLogger.debug("yesButtonClicked")
+    }
+    
+    @IBAction func noButtonClicked(sender: UITapGestureRecognizer) {
+        AppLogger.debug("noButtonClicked")
+    }
+    
     
     func updateUI(){
         
@@ -78,6 +104,11 @@ extension HotOrNotViewController {
         userName.text = user.name
         userLocation.text = "\(user.city), \(user.state)"
         isOnline.image = user.isOnline ? UIImage.init(named: "Online") : UIImage.init(named: "OnlineNot")
+        coverPhoto.image = user.coverPhoto
+        sexPref.text = ( user.likes! == Sex.Female ) ? "Likes girls" : "Likes boys"
+        sex.text = user.sex.toString()
+        age.text = "\(user.age())"
+        presentation.text = user.presentation
         
         self.view.setNeedsDisplay()
     

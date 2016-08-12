@@ -22,7 +22,8 @@ import ReSwift
  
  */
 
-protocol AppAction: ReSwift.Action, Loggable {}
+protocol XYAction: ReSwift.Action, Loggable {}
+
+struct XYInitAction: XYAction {}
 
 
-struct AppInitAction: AppAction {}

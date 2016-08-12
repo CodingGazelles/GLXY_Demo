@@ -14,8 +14,8 @@ import ReSwift
 
 class SigninViewController: UIViewController {
     
-    let store = AppStateStore.defaultStore()
-    var state: AppState!
+    let store = XYStateStore.defaultStore()
+    var state: XYAppState!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ extension SigninViewController: StoreSubscriber {
         store.unsubscribe(self)
     }
     
-    func newState(state: AppState) {
+    func newState(state: XYAppState) {
         AppLogger.debug("New State received by SigninViewController: \(state)")
         
         // UPdate UI

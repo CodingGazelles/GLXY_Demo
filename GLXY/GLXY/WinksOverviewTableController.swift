@@ -14,8 +14,8 @@ import ReSwift
 
 class WinksOverviewTableController: UITableViewController {
     
-    let store = AppStateStore.defaultStore()
-    var state: AppState?
+    let store = XYStateStore.defaultStore()
+    var state: XYAppState?
     
     let cellIdentifier = "WinkTableCellView"
     var cellViewNib: UINib!
@@ -54,7 +54,7 @@ class WinksOverviewTableController: UITableViewController {
             cell.winkerInfo.text = "\(winker.city), \(winker.sex.toString()) (\(winker.age()))"
             cell.winkerMessage.text = "\(winker.name) sent you a Wink!"
             
-            let time = item.timeTillNow()
+            let time = timeTillNow( item.date)
             cell.timeTillNow?.text = String( time.0) + time.1
             
         }
@@ -91,7 +91,7 @@ extension WinksOverviewTableController: AppStoreSubscriber {
         store.unsubscribe(self)
     }
     
-    func newState(state: AppState) {
+    func newState(state: XYAppState) {
         AppLogger.debug("New State received by LoginViewController: \(state)")
         
         self.state = state

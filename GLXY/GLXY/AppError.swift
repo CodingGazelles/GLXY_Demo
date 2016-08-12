@@ -10,7 +10,7 @@ import Foundation
 
 
 
-enum AppError: ErrorType, Loggable {
-    case NilActionCreatorReturn( actionCreator: AppStateStore.ActionCreator)
+enum XYError: ErrorType, Loggable {
+    case NilActionCreatorReturn( actionCreator: XYStateStore.ActionCreator)
 
 }

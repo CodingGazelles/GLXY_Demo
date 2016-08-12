@@ -14,17 +14,17 @@ import BrightFutures
 
 
 protocol AppStoreSubscriber: StoreSubscriber {
-    func newState(state: AppState)
+    func newState(state: XYAppState)
 }
 
-class AppStateStore: StoreType {
+class XYStateStore: StoreType {
     
     
-    typealias State = AppState
+    typealias State = XYAppState
     typealias SubscriptionType = Subscription<State>
     
-    private static let stateStoreInstance = AppStateStore(reducer: AppReducer(), state: nil, middleware: [])
-    static func defaultStore() -> AppStateStore {
+    private static let stateStoreInstance = XYStateStore(reducer: XYReducer(), state: nil, middleware: [])
+    static func defaultStore() -> XYStateStore {
         return stateStoreInstance
     }
     
@@ -50,11 +50,11 @@ class AppStateStore: StoreType {
     
     private var isDispatching = false
     
-    required convenience init(reducer: AnyReducer, state: AppStateStore.State?) {
+    required convenience init(reducer: AnyReducer, state: XYStateStore.State?) {
         self.init(reducer: reducer, state: state, middleware: [])
     }
     
-    required init(reducer: AnyReducer, state: AppStateStore.State?, middleware: [Middleware]) {
+    required init(reducer: AnyReducer, state: XYStateStore.State?, middleware: [Middleware]) {
         self.reducer = reducer
         
         // Wrap the dispatch function with all middlewares
@@ -70,7 +70,7 @@ class AppStateStore: StoreType {
         if let state = state {
             self.state = state
         } else {
-            dispatch( AppInitAction())
+            dispatch( XYInitAction())
         }
     }
     
@@ -138,11 +138,11 @@ class AppStateStore: StoreType {
     }
     
     
-    func dispatch(action: Action) -> Future<Any,AppError> {
+    func dispatch(action: XYAction) -> Future<Any,XYError> {
         
         AppLogger.debug("Dispatching action: \(action)")
         
-        let promise = Promise<Any, AppError>()
+        let promise = Promise<Any, XYError>()
         
         Queue.main.context {
             
@@ -160,36 +160,36 @@ class AppStateStore: StoreType {
     }
     
     
-    func dispatch( actionCreator: ActionCreator) -> Future<Any, AppError> {
+    func dispatch( actionCreator: ActionCreator) -> Future<Any, XYError> {
         
         AppLogger.debug("Dispatching action creator: \(actionCreator)")
         
-        let promise = Promise<Any, AppError>()
+        let promise = Promise<Any, XYError>()
         
-        Queue.main.context {
-            
-            let action = actionCreator(state: self.state, store: self)
-            
-            if let action = action {
-                
-                self.dispatch(action)
-                    .onSuccess{ result in
-                        promise.success( result)
-                    }
-                    .onFailure{ error in
-                        promise.failure( error)
-                    }
-                
-            } else {
-            
-                let error = AppError.NilActionCreatorReturn(actionCreator: actionCreator)
-                AppLogger.error("Error occurred while executing ActionCreator \(actionCreator)", error: error)
-                
-                promise.failure(error)
-                
-            }
-            
-        }
+//        Queue.main.context {
+//            
+//            let action = actionCreator(state: self.state, store: self)
+//            
+//            if let action = action {
+//                
+//                self.dispatch(action)
+//                    .onSuccess{ result in
+//                        promise.success( result)
+//                    }
+//                    .onFailure{ error in
+//                        promise.failure( error)
+//                    }
+//                
+//            } else {
+//            
+//                let error = XYError.NilActionCreatorReturn(actionCreator: actionCreator)
+//                AppLogger.error("Error occurred while executing ActionCreator \(actionCreator)", error: error)
+//                
+//                promise.failure(error)
+//                
+//            }
+//            
+//        }
         
         return promise.future
     }
@@ -221,13 +221,13 @@ class AppStateStore: StoreType {
     }
     
     
-    typealias DispatchCallback = (AppState) -> Void
+    typealias DispatchCallback = (XYAppState) -> Void
     
-    typealias ActionCreator = (state: AppState, store: AppStateStore) -> Action?
+    typealias ActionCreator = (state: XYAppState, store: XYStateStore) -> Action?
     
     typealias AsyncActionCreator = (
-        state: AppState,
-        store: AppStateStore,
+        state: XYAppState,
+        store: XYStateStore,
         actionCreatorCallback: (ActionCreator) -> Void
         ) -> Void
     
