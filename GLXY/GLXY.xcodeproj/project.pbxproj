@@ -57,10 +57,14 @@
 		DFA3F5AB1D246CAC00490A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFA3F5A91D246CAC00490A95 /* LaunchScreen.storyboard */; };
 		DFA3F5B61D246CAC00490A95 /* GLXYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3F5B51D246CAC00490A95 /* GLXYTests.swift */; };
 		DFA3F5C11D246CAC00490A95 /* GLXYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA3F5C01D246CAC00490A95 /* GLXYUITests.swift */; };
+		DFB9E6AC1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */; };
+		DFB9E6AE1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DFB9E6AD1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM */; };
+		DFB9E6AF1D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */; };
+		DFB9E6B01D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DFDABEB61D340B6E0081DF86 /* ProfileOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDABEB51D340B6E0081DF86 /* ProfileOverviewViewController.swift */; };
 		DFDABEB81D3422090081DF86 /* WinkTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDABEB71D3422090081DF86 /* WinkTableCellView.xib */; };
-		DFDABEBA1D342F6B0081DF86 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDABEB91D342F6B0081DF86 /* UIImageView.swift */; };
-		DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905F91D2EAC570038B5E7 /* AppTextField.swift */; };
+		DFDABEBA1D342F6B0081DF86 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDABEB91D342F6B0081DF86 /* UIView.swift */; };
+		DFE905FA1D2EAC570038B5E7 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905F91D2EAC570038B5E7 /* UITextField.swift */; };
 		DFE905FD1D2EFCB00038B5E7 /* EditMyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE905FC1D2EFCB00038B5E7 /* EditMyProfileViewController.swift */; };
 		DFFE32061D4FE04900A326FC /* HotOrNotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFE32051D4FE04900A326FC /* HotOrNotViewController.swift */; };
 /* End PBXBuildFile section */
@@ -93,6 +97,7 @@
 				DF90D4661D26B4F4009EF0C2 /* CleanroomLogger.framework in Embed Frameworks */,
 				DF90D4681D26B4F4009EF0C2 /* Result.framework in Embed Frameworks */,
 				DF90D46A1D26B4F4009EF0C2 /* ReSwift.framework in Embed Frameworks */,
+				DFB9E6B01D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Embed Frameworks */,
 				DF90D4641D26B4F4009EF0C2 /* CleanroomASL.framework in Embed Frameworks */,
 				DF90D4621D26B4F4009EF0C2 /* BrightFutures.framework in Embed Frameworks */,
 			);
@@ -148,10 +153,12 @@
 		DFA3F5BC1D246CAC00490A95 /* GLXYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLXYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA3F5C01D246CAC00490A95 /* GLXYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLXYUITests.swift; sourceTree = "<group>"; };
 		DFA3F5C21D246CAC00490A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TPKeyboardAvoidingKit.framework; path = Carthage/Build/iOS/TPKeyboardAvoidingKit.framework; sourceTree = "<group>"; };
+		DFB9E6AD1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = TPKeyboardAvoidingKit.framework.dSYM; path = Carthage/Build/iOS/TPKeyboardAvoidingKit.framework.dSYM; sourceTree = "<group>"; };
 		DFDABEB51D340B6E0081DF86 /* ProfileOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileOverviewViewController.swift; sourceTree = "<group>"; };
 		DFDABEB71D3422090081DF86 /* WinkTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinkTableCellView.xib; sourceTree = "<group>"; };
-		DFDABEB91D342F6B0081DF86 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		DFE905F91D2EAC570038B5E7 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		DFDABEB91D342F6B0081DF86 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DFE905F91D2EAC570038B5E7 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		DFE905FC1D2EFCB00038B5E7 /* EditMyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMyProfileViewController.swift; sourceTree = "<group>"; };
 		DFFE32051D4FE04900A326FC /* HotOrNotViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotOrNotViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,10 +174,12 @@
 				DF90D4461D25A5F5009EF0C2 /* CleanroomLogger.framework in Frameworks */,
 				DF90D4471D25A5F5009EF0C2 /* Result.framework in Frameworks */,
 				DF90D4631D26B4F4009EF0C2 /* CleanroomASL.framework in Frameworks */,
+				DFB9E6AC1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */,
 				DF90D4481D25A5F5009EF0C2 /* ReSwift.framework in Frameworks */,
 				DF90D45F1D26B4F4009EF0C2 /* Box.framework in Frameworks */,
 				DF90D4651D26B4F4009EF0C2 /* CleanroomLogger.framework in Frameworks */,
 				DF90D4691D26B4F4009EF0C2 /* ReSwift.framework in Frameworks */,
+				DFB9E6AF1D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */,
 				DF90D4451D25A5F5009EF0C2 /* CleanroomASL.framework in Frameworks */,
 				DF90D4441D25A5F5009EF0C2 /* BrightFutures.framework in Frameworks */,
 			);
@@ -244,9 +253,6 @@
 			children = (
 				DF9C81AF1D42A25E005CD4E0 /* ReSwift */,
 				DF90D44F1D25AC43009EF0C2 /* Actions */,
-				DF90D4291D25933E009EF0C2 /* StateStore.swift */,
-				DF90D44B1D25A701009EF0C2 /* XYAppState.swift */,
-				DF2BA2F61D5273E600E01ABD /* InitialState */,
 				DF91326E1D5E1C1B00B2AAF5 /* Model */,
 			);
 			name = AppState;
@@ -274,6 +280,7 @@
 		DF90D4301D25A5AF009EF0C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */,
 				DF90D4491D25A60D009EF0C2 /* dSYM */,
 				DF90D4371D25A5F5009EF0C2 /* Box.framework */,
 				DF90D4381D25A5F5009EF0C2 /* BrightFutures.framework */,
@@ -288,6 +295,7 @@
 		DF90D4491D25A60D009EF0C2 /* dSYM */ = {
 			isa = PBXGroup;
 			children = (
+				DFB9E6AD1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM */,
 				DF90D4311D25A5F5009EF0C2 /* Box.framework.dSYM */,
 				DF90D4321D25A5F5009EF0C2 /* BrightFutures.framework.dSYM */,
 				DF90D4331D25A5F5009EF0C2 /* CleanroomASL.framework.dSYM */,
@@ -320,7 +328,10 @@
 		DF91326E1D5E1C1B00B2AAF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF90D4291D25933E009EF0C2 /* StateStore.swift */,
+				DF90D44B1D25A701009EF0C2 /* XYAppState.swift */,
 				DF9C81AD1D401CF8005CD4E0 /* AppObjects.swift */,
+				DF2BA2F61D5273E600E01ABD /* InitialState */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -389,8 +400,8 @@
 		DFE905FB1D2EFC2C0038B5E7 /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
-				DFE905F91D2EAC570038B5E7 /* AppTextField.swift */,
-				DFDABEB91D342F6B0081DF86 /* UIImageView.swift */,
+				DFE905F91D2EAC570038B5E7 /* UITextField.swift */,
+				DFDABEB91D342F6B0081DF86 /* UIView.swift */,
 			);
 			name = UIControls;
 			sourceTree = "<group>";
@@ -504,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF90D43E1D25A5F5009EF0C2 /* BrightFutures.framework.dSYM in Resources */,
+				DFB9E6AE1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM in Resources */,
 				DF90D4411D25A5F5009EF0C2 /* Result.framework.dSYM in Resources */,
 				DF90D43D1D25A5F5009EF0C2 /* Box.framework.dSYM in Resources */,
 				DF90D43F1D25A5F5009EF0C2 /* CleanroomASL.framework.dSYM in Resources */,
@@ -542,7 +554,7 @@
 				DF90D44C1D25A701009EF0C2 /* XYAppState.swift in Sources */,
 				DF90D44E1D25A831009EF0C2 /* AppLogger.swift in Sources */,
 				DFA3F5A31D246CAC00490A95 /* WelcomeViewController.swift in Sources */,
-				DFE905FA1D2EAC570038B5E7 /* AppTextField.swift in Sources */,
+				DFE905FA1D2EAC570038B5E7 /* UITextField.swift in Sources */,
 				DF9C81AE1D401CF8005CD4E0 /* AppObjects.swift in Sources */,
 				DFE905FD1D2EFCB00038B5E7 /* EditMyProfileViewController.swift in Sources */,
 				DF9093CA1D2C29040079B608 /* UsersNearbyViewController.swift in Sources */,
@@ -555,7 +567,7 @@
 				DF9132701D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift in Sources */,
 				DF90D4521D25AD33009EF0C2 /* XYReducer.swift in Sources */,
 				DF90D4541D25AE79009EF0C2 /* XYAction.swift in Sources */,
-				DFDABEBA1D342F6B0081DF86 /* UIImageView.swift in Sources */,
+				DFDABEBA1D342F6B0081DF86 /* UIView.swift in Sources */,
 				DF4C63291D36A86B00CD19A6 /* WinkTableCellView.swift in Sources */,
 				DF90D4271D258BD6009EF0C2 /* SigninViewController.swift in Sources */,
 				DFFE32061D4FE04900A326FC /* HotOrNotViewController.swift in Sources */,
