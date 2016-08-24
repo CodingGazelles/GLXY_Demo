@@ -12,13 +12,14 @@ import ReSwift
 
 
 
-class WinksOverviewTableController: UITableViewController {
+class WinksTableController: UITableViewController {
     
     let store = XYStateStore.defaultStore()
     var state: XYAppState?
     
     let cellIdentifier = "WinkTableCellView"
     var cellViewNib: UINib!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +77,7 @@ class WinksOverviewTableController: UITableViewController {
  See https://github.com/ReSwift/ReSwift for more explication
  
  */
-extension WinksOverviewTableController: AppStoreSubscriber {
+extension WinksTableController: AppStoreSubscriber {
     
     
     override func viewWillAppear( animated: Bool) {

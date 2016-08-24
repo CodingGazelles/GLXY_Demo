@@ -38,12 +38,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GLXY/GLXY/WinksOverviewTableController.swift"
-            timestampString = "491346961.654034"
+            timestampString = "493761500.756251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "WinksOverviewTableController"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "WinksTableController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -54,12 +54,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GLXY/GLXY/WinksOverviewTableController.swift"
-            timestampString = "491346961.654034"
+            timestampString = "493761500.756251"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "WinksOverviewTableController"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "WinksTableController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
@@ -92,6 +92,38 @@
             startingLineNumber = "103"
             endingLineNumber = "103"
             landmarkName = "updateUI()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GLXY/GLXY/WinksOverviewTableController.swift"
+            timestampString = "493761155.182487"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GLXY/GLXY/ProfileOverviewViewController.swift"
+            timestampString = "493765577.240758"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

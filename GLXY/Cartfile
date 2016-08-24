@@ -6,4 +6,5 @@
 #github "emaloney/CleanroomLogger"
 #github "ReSwift/ReSwift" >= 2.0
 #github "Thomvis/BrightFutures" >= 4.1.0
-github "michaeltyson/TPKeyboardAvoiding"
+#github "michaeltyson/TPKeyboardAvoiding"
+github "uacaps/PageMenu"

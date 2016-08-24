@@ -61,6 +61,16 @@
 		DFB9E6AE1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DFB9E6AD1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM */; };
 		DFB9E6AF1D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */; };
 		DFB9E6B01D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFB9E6B51D6E296F005AE490 /* PageMenu.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DFB9E6B11D6E296F005AE490 /* PageMenu.framework.dSYM */; };
+		DFB9E6B61D6E296F005AE490 /* PageMenuFramework.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = DFB9E6B21D6E296F005AE490 /* PageMenuFramework.framework.dSYM */; };
+		DFB9E6B71D6E296F005AE490 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6B31D6E296F005AE490 /* PageMenu.framework */; };
+		DFB9E6B81D6E296F005AE490 /* PageMenuFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6B41D6E296F005AE490 /* PageMenuFramework.framework */; };
+		DFB9E6B91D6E2985005AE490 /* PageMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6B31D6E296F005AE490 /* PageMenu.framework */; };
+		DFB9E6BA1D6E2985005AE490 /* PageMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6B31D6E296F005AE490 /* PageMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFB9E6BB1D6E2985005AE490 /* PageMenuFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6B41D6E296F005AE490 /* PageMenuFramework.framework */; };
+		DFB9E6BC1D6E2985005AE490 /* PageMenuFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFB9E6B41D6E296F005AE490 /* PageMenuFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFB9E6BE1D6E2FE5005AE490 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB9E6BD1D6E2FE5005AE490 /* InboxViewController.swift */; };
+		DFB9E6C01D6E47B9005AE490 /* VisitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB9E6BF1D6E47B9005AE490 /* VisitsViewController.swift */; };
 		DFDABEB61D340B6E0081DF86 /* ProfileOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDABEB51D340B6E0081DF86 /* ProfileOverviewViewController.swift */; };
 		DFDABEB81D3422090081DF86 /* WinkTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDABEB71D3422090081DF86 /* WinkTableCellView.xib */; };
 		DFDABEBA1D342F6B0081DF86 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDABEB91D342F6B0081DF86 /* UIView.swift */; };
@@ -93,6 +103,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DFB9E6BA1D6E2985005AE490 /* PageMenu.framework in Embed Frameworks */,
+				DFB9E6BC1D6E2985005AE490 /* PageMenuFramework.framework in Embed Frameworks */,
 				DF90D4601D26B4F4009EF0C2 /* Box.framework in Embed Frameworks */,
 				DF90D4661D26B4F4009EF0C2 /* CleanroomLogger.framework in Embed Frameworks */,
 				DF90D4681D26B4F4009EF0C2 /* Result.framework in Embed Frameworks */,
@@ -155,6 +167,12 @@
 		DFA3F5C21D246CAC00490A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TPKeyboardAvoidingKit.framework; path = Carthage/Build/iOS/TPKeyboardAvoidingKit.framework; sourceTree = "<group>"; };
 		DFB9E6AD1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = TPKeyboardAvoidingKit.framework.dSYM; path = Carthage/Build/iOS/TPKeyboardAvoidingKit.framework.dSYM; sourceTree = "<group>"; };
+		DFB9E6B11D6E296F005AE490 /* PageMenu.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PageMenu.framework.dSYM; path = Carthage/Build/iOS/PageMenu.framework.dSYM; sourceTree = "<group>"; };
+		DFB9E6B21D6E296F005AE490 /* PageMenuFramework.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PageMenuFramework.framework.dSYM; path = Carthage/Build/iOS/PageMenuFramework.framework.dSYM; sourceTree = "<group>"; };
+		DFB9E6B31D6E296F005AE490 /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = Carthage/Build/iOS/PageMenu.framework; sourceTree = "<group>"; };
+		DFB9E6B41D6E296F005AE490 /* PageMenuFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenuFramework.framework; path = Carthage/Build/iOS/PageMenuFramework.framework; sourceTree = "<group>"; };
+		DFB9E6BD1D6E2FE5005AE490 /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		DFB9E6BF1D6E47B9005AE490 /* VisitsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitsViewController.swift; sourceTree = "<group>"; };
 		DFDABEB51D340B6E0081DF86 /* ProfileOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileOverviewViewController.swift; sourceTree = "<group>"; };
 		DFDABEB71D3422090081DF86 /* WinkTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WinkTableCellView.xib; sourceTree = "<group>"; };
 		DFDABEB91D342F6B0081DF86 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -169,18 +187,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF90D4431D25A5F5009EF0C2 /* Box.framework in Frameworks */,
+				DFB9E6BB1D6E2985005AE490 /* PageMenuFramework.framework in Frameworks */,
+				DFB9E6B91D6E2985005AE490 /* PageMenu.framework in Frameworks */,
 				DF90D4671D26B4F4009EF0C2 /* Result.framework in Frameworks */,
 				DF90D4611D26B4F4009EF0C2 /* BrightFutures.framework in Frameworks */,
 				DF90D4461D25A5F5009EF0C2 /* CleanroomLogger.framework in Frameworks */,
 				DF90D4471D25A5F5009EF0C2 /* Result.framework in Frameworks */,
 				DF90D4631D26B4F4009EF0C2 /* CleanroomASL.framework in Frameworks */,
 				DFB9E6AC1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */,
+				DFB9E6B81D6E296F005AE490 /* PageMenuFramework.framework in Frameworks */,
 				DF90D4481D25A5F5009EF0C2 /* ReSwift.framework in Frameworks */,
 				DF90D45F1D26B4F4009EF0C2 /* Box.framework in Frameworks */,
 				DF90D4651D26B4F4009EF0C2 /* CleanroomLogger.framework in Frameworks */,
 				DF90D4691D26B4F4009EF0C2 /* ReSwift.framework in Frameworks */,
 				DFB9E6AF1D6DF6C8005AE490 /* TPKeyboardAvoidingKit.framework in Frameworks */,
 				DF90D4451D25A5F5009EF0C2 /* CleanroomASL.framework in Frameworks */,
+				DFB9E6B71D6E296F005AE490 /* PageMenu.framework in Frameworks */,
 				DF90D4441D25A5F5009EF0C2 /* BrightFutures.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +247,8 @@
 				DF9C81AA1D40105F005CD4E0 /* WinksOverviewTableController.swift */,
 				DF218FA91D4BE98200FBB684 /* UserSearchResultsViewController.swift */,
 				DFFE32051D4FE04900A326FC /* HotOrNotViewController.swift */,
+				DFB9E6BD1D6E2FE5005AE490 /* InboxViewController.swift */,
+				DFB9E6BF1D6E47B9005AE490 /* VisitsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -280,6 +304,8 @@
 		DF90D4301D25A5AF009EF0C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFB9E6B31D6E296F005AE490 /* PageMenu.framework */,
+				DFB9E6B41D6E296F005AE490 /* PageMenuFramework.framework */,
 				DFB9E6AB1D6DF544005AE490 /* TPKeyboardAvoidingKit.framework */,
 				DF90D4491D25A60D009EF0C2 /* dSYM */,
 				DF90D4371D25A5F5009EF0C2 /* Box.framework */,
@@ -295,6 +321,8 @@
 		DF90D4491D25A60D009EF0C2 /* dSYM */ = {
 			isa = PBXGroup;
 			children = (
+				DFB9E6B11D6E296F005AE490 /* PageMenu.framework.dSYM */,
+				DFB9E6B21D6E296F005AE490 /* PageMenuFramework.framework.dSYM */,
 				DFB9E6AD1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM */,
 				DF90D4311D25A5F5009EF0C2 /* Box.framework.dSYM */,
 				DF90D4321D25A5F5009EF0C2 /* BrightFutures.framework.dSYM */,
@@ -518,6 +546,8 @@
 				DFB9E6AE1D6DF557005AE490 /* TPKeyboardAvoidingKit.framework.dSYM in Resources */,
 				DF90D4411D25A5F5009EF0C2 /* Result.framework.dSYM in Resources */,
 				DF90D43D1D25A5F5009EF0C2 /* Box.framework.dSYM in Resources */,
+				DFB9E6B51D6E296F005AE490 /* PageMenu.framework.dSYM in Resources */,
+				DFB9E6B61D6E296F005AE490 /* PageMenuFramework.framework.dSYM in Resources */,
 				DF90D43F1D25A5F5009EF0C2 /* CleanroomASL.framework.dSYM in Resources */,
 				DFDABEB81D3422090081DF86 /* WinkTableCellView.xib in Resources */,
 				DFA3F5AB1D246CAC00490A95 /* LaunchScreen.storyboard in Resources */,
@@ -565,6 +595,7 @@
 				DFDABEB61D340B6E0081DF86 /* ProfileOverviewViewController.swift in Sources */,
 				DF2BA2F81D52751200E01ABD /* InitWinkList.swift in Sources */,
 				DF9132701D5E3E1100B2AAF5 /* XYReducerHotOrNot.swift in Sources */,
+				DFB9E6BE1D6E2FE5005AE490 /* InboxViewController.swift in Sources */,
 				DF90D4521D25AD33009EF0C2 /* XYReducer.swift in Sources */,
 				DF90D4541D25AE79009EF0C2 /* XYAction.swift in Sources */,
 				DFDABEBA1D342F6B0081DF86 /* UIView.swift in Sources */,
@@ -574,6 +605,7 @@
 				DF9C81B11D42A26E005CD4E0 /* Subscription.swift in Sources */,
 				DF90D4561D25B52F009EF0C2 /* AppError.swift in Sources */,
 				DF218F9C1D4A87CD00FBB684 /* InitialState.swift in Sources */,
+				DFB9E6C01D6E47B9005AE490 /* VisitsViewController.swift in Sources */,
 				DFA3F5A11D246CAC00490A95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
