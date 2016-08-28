@@ -19,6 +19,7 @@ func initialState() -> XYAppState {
     
     state.winksOverviewState.winks = InitialState.winks
     state.hotOrNotState.userList = InitialState.users
+    state.usersNearbyState.userList = InitialState.users
     
     
     return state
@@ -29,7 +30,7 @@ func initialState() -> XYAppState {
 class InitialState {
     
     private static var _winks: [XYWink]?
-    private static var _users: [XYUser]?
+    private static var _users: [XYUserProfile]?
     
     static var winks:[XYWink] {
         get {
@@ -44,7 +45,7 @@ class InitialState {
     }
     
     
-    static var users:[XYUser] {
+    static var users:[XYUserProfile] {
         get {
             
             if _users == nil {

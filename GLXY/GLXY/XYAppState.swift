@@ -27,14 +27,18 @@ import ReSwift
 
 struct XYAppState: StateType, Loggable  {
     
-    var user: XYUser!
-    var userIsOnline = false
+    var user: XYUserProfile!
+//    var userIsOnline = false
     
     var winksOverviewState = WinksOverviewState()
     var hotOrNotState = HotOrNotState()
+    var usersNearbyState = UsersNearbyState()
     
 }
 
+struct UsersNearbyState {
+    var userList = [XYUserProfile]()
+}
 
 struct WinksOverviewState {
     var winks = [XYWink]()
@@ -42,11 +46,11 @@ struct WinksOverviewState {
 
 struct HotOrNotState {
     
-    var userList = [XYUser]()
+    var userList = [XYUserProfile]()
     var index = 0
     
-    var hotList = [XYUser]()
-    var notList = [XYUser]()
+    var hotList = [XYUserProfile]()
+    var notList = [XYUserProfile]()
     
     
 }

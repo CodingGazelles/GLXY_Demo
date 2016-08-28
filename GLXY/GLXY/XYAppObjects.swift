@@ -20,19 +20,19 @@ protocol XYObjectType: Loggable {}
 
 class XYWink: XYObjectType {
     
-    var winker: XYUser!
+    var winker: XYUserProfile!
     var date: NSDate!
     
 }
 
 class XYHot: XYObjectType {
     
-    var hotter: XYUser!
+    var hotter: XYUserProfile!
     var date: NSDate!
     
 }
 
-class XYUser: XYObjectType {
+class XYUserProfile: XYObjectType {
     
     var profilePhoto: UIImage?
     var coverPhoto: UIImage?
@@ -42,6 +42,8 @@ class XYUser: XYObjectType {
     var country: String!
     var state: String!
     var city: String!
+    
+    var milesAway: Int!
     
     var maritalStatus: MaritalStatus!
     var sex: Sex!
@@ -53,8 +55,8 @@ class XYUser: XYObjectType {
     
     var presentation: String!
     
-    var receivedXYHots = [XYHot]()
-    var receivedXYWinks = [XYWink]()
+//    var receivedXYHots = [XYHot]()
+//    var receivedXYWinks = [XYWink]()
     
     func age() -> Int {
         
